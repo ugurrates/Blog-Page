@@ -229,18 +229,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Reading progress indicator (optional)
+    // Reading progress indicator
     const progressBar = document.createElement('div');
-    progressBar.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 3px;
-        background: linear-gradient(90deg, #2563eb, #3b82f6);
-        width: 0%;
-        z-index: 1000;
-        transition: width 0.1s ease;
-    `;
+    progressBar.className = 'reading-progress';
     document.body.appendChild(progressBar);
     
     window.addEventListener('scroll', () => {
