@@ -1183,6 +1183,37 @@ a:hover {
     }
 }
 
+/* Cert In-Progress Badge (index.html) */
+.certifications .cert-in-progress {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #92400e;
+    border: 1px dashed #d97706;
+    font-style: italic;
+}
+
+/* Cert In-Progress (cv.html) */
+.certifications-list .cert-item.cert-in-progress {
+    border-left: 3px solid #d97706;
+    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+}
+
+.certifications-list .cert-item.cert-in-progress .cert-logo {
+    color: #d97706;
+}
+
+/* Project Stars Badge */
+.project-stars {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #d97706;
+    margin-left: 0.5rem;
+}
+
+.project-stars i {
+    color: #f59e0b;
+    margin-right: 0.15rem;
+}
+
 /* Reading Progress Bar */
 .reading-progress {
     position: fixed;
