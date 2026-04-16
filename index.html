@@ -8,15 +8,49 @@
     <meta name="author" content="Ugur Ates">
 
     <title>Ugur Ates - Security Architect | Security Automation Engineer | SOC Team Lead</title>
-    
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ugurrates.github.io/Blog-Page/">
+    <meta property="og:title" content="Ugur Ates — Security Architect | SOC Team Lead">
+    <meta property="og:description" content="Technical writing on threat intelligence, security operations, enterprise architecture, and critical infrastructure cybersecurity.">
+    <meta property="og:site_name" content="Ugur Ates">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ugurrates.github.io/Blog-Page/">
+    <meta name="twitter:title" content="Ugur Ates — Security Architect | SOC Team Lead">
+    <meta name="twitter:description" content="Technical writing on threat intelligence, security operations, enterprise architecture, and critical infrastructure cybersecurity.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNQBF4LBD0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KNQBF4LBD0');
+    </script>
+
+    <!-- Set theme before paint to avoid flash -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,6 +66,11 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -57,6 +96,9 @@
                     <a href="https://medium.com/@ugur.can.ates" target="_blank" title="Medium">
                         <i class="fab fa-medium"></i>
                     </a>
+                    <a href="https://substack.com/@ugurates" target="_blank" title="Substack">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </a>
                     <a href="mailto:ugurcanates@outlook.com" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -69,119 +111,37 @@
     <section id="blog" class="blog">
         <div class="container">
             <h2 class="section-title">Latest Writing</h2>
-            
-            <article class="blog-post featured">
-                <div class="post-header">
-                    <span class="post-tag">Featured</span>
-                    <span class="post-date">February 2026</span>
-                </div>
-                <h3 class="post-title">
-                    <a href="https://medium.com/@ugur.can.ates/why-your-soc-needs-an-architecture-mindset-not-just-more-tools-64cea8086654" target="_blank">
-                        Why Your SOC Needs an Architecture Mindset, Not Just More Tools
-                    </a>
-                </h3>
-                <p class="post-excerpt">
-                    Part 1 of a 12-part series on building a Cyber Threat Intelligence sharing architecture using enterprise
-                    architecture frameworks like TOGAF and NAF. Exploring how structured architectural thinking transforms
-                    SOC operations from reactive tool management to strategic capability building.
-                </p>
-                <div class="post-meta">
-                    <span class="read-time"><i class="far fa-clock"></i> Series - Part 1</span>
-                    <div class="post-tags">
-                        <span class="tag">TOGAF</span>
-                        <span class="tag">NAF</span>
-                        <span class="tag">SOC Architecture</span>
-                        <span class="tag">CTI</span>
-                    </div>
-                </div>
-                <a href="https://medium.com/@ugur.can.ates/why-your-soc-needs-an-architecture-mindset-not-just-more-tools-64cea8086654" class="read-more" target="_blank">
-                    Read Article <i class="fas fa-arrow-right"></i>
-                </a>
-            </article>
 
-            <article class="blog-post">
-                <div class="post-header">
-                    <span class="post-date">January 2026</span>
-                </div>
-                <h3 class="post-title">
-                    <a href="https://medium.com/@ugur.can.ates/av-evasion-methods-and-detections-series-shellcode-pe-infection-code-cave-injection-8321f4c583f4" target="_blank">
-                        AV Evasion Methods and Detections: Shellcode &mdash; PE Infection / Code Cave Injection
-                    </a>
-                </h3>
-                <p class="post-excerpt">
-                    Deep-dive into PE file format exploitation and code cave injection techniques. Includes YARA rules,
-                    MITRE ATT&CK mappings, KQL detection queries, and practical lab demonstrations for blue team defenders.
-                </p>
-                <div class="post-meta">
-                    <span class="read-time"><i class="far fa-clock"></i> Technical Deep-Dive</span>
-                    <div class="post-tags">
-                        <span class="tag">AV Evasion</span>
-                        <span class="tag">Detection Engineering</span>
-                        <span class="tag">YARA</span>
-                        <span class="tag">KQL</span>
-                    </div>
-                </div>
-                <a href="https://medium.com/@ugur.can.ates/av-evasion-methods-and-detections-series-shellcode-pe-infection-code-cave-injection-8321f4c583f4" class="read-more" target="_blank">
-                    Read Article <i class="fas fa-arrow-right"></i>
-                </a>
-            </article>
-
-            <article class="blog-post">
-                <div class="post-header">
-                    <span class="post-date">December 2025</span>
-                </div>
-                <h3 class="post-title">
-                    <a href="https://medium.com/@ugur.can.ates/hardening-the-microsoft-365-security-ecosystem-a-professional-defense-manual-for-defender-xdr-and-13e5eaa24ef1" target="_blank">
-                        Hardening the Microsoft 365 Security Ecosystem: A Professional Defense Manual for Defender XDR and EDR
-                    </a>
-                </h3>
-                <p class="post-excerpt">
-                    Comprehensive hardening manual covering Microsoft Intune and Defender for Endpoint integration,
-                    Attack Surface Reduction rules, Windows Server 2025 hardening, and CIS Foundations Benchmark controls.
-                </p>
-                <div class="post-meta">
-                    <span class="read-time"><i class="far fa-clock"></i> 12 min read</span>
-                    <div class="post-tags">
-                        <span class="tag">Microsoft Defender</span>
-                        <span class="tag">XDR</span>
-                        <span class="tag">Security Hardening</span>
-                        <span class="tag">CIS Benchmark</span>
-                    </div>
-                </div>
-                <a href="https://medium.com/@ugur.can.ates/hardening-the-microsoft-365-security-ecosystem-a-professional-defense-manual-for-defender-xdr-and-13e5eaa24ef1" class="read-more" target="_blank">
-                    Read Article <i class="fas fa-arrow-right"></i>
-                </a>
-            </article>
-
-            <article class="blog-post">
-                <div class="post-header">
-                    <span class="post-date">May 2022</span>
-                </div>
-                <h3 class="post-title">
-                    <a href="https://uurcanates.medium.com/the-perfect-linux-distribution-for-threat-intelligence-and-blue-team-members-c69a7123b58" target="_blank">
-                        The Perfect Linux Distribution for Threat Intelligence and Blue Team Members
-                    </a>
-                </h3>
-                <p class="post-excerpt">
-                    An overview of CSI Linux, a focused Linux distribution designed for digital forensics with investigation,
-                    analysis, and incident response capabilities tailored for threat intelligence and blue team professionals.
-                </p>
-                <div class="post-meta">
-                    <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
-                    <div class="post-tags">
-                        <span class="tag">Threat Intelligence</span>
-                        <span class="tag">Blue Team</span>
-                        <span class="tag">Linux</span>
-                        <span class="tag">Digital Forensics</span>
-                    </div>
-                </div>
-                <a href="https://uurcanates.medium.com/the-perfect-linux-distribution-for-threat-intelligence-and-blue-team-members-c69a7123b58" class="read-more" target="_blank">
-                    Read Article <i class="fas fa-arrow-right"></i>
-                </a>
-            </article>
+            <div id="blog-feed" class="blog-feed" aria-live="polite">
+                <!-- Loading skeletons -->
+                <article class="blog-post blog-skeleton">
+                    <div class="skeleton-line skeleton-tag"></div>
+                    <div class="skeleton-line skeleton-title"></div>
+                    <div class="skeleton-line skeleton-text"></div>
+                    <div class="skeleton-line skeleton-text"></div>
+                </article>
+                <article class="blog-post blog-skeleton">
+                    <div class="skeleton-line skeleton-tag"></div>
+                    <div class="skeleton-line skeleton-title"></div>
+                    <div class="skeleton-line skeleton-text"></div>
+                    <div class="skeleton-line skeleton-text"></div>
+                </article>
+                <article class="blog-post blog-skeleton">
+                    <div class="skeleton-line skeleton-tag"></div>
+                    <div class="skeleton-line skeleton-title"></div>
+                    <div class="skeleton-line skeleton-text"></div>
+                    <div class="skeleton-line skeleton-text"></div>
+                </article>
+            </div>
 
             <div class="blog-cta">
-                <p>More articles on <a href="https://medium.com/@ugur.can.ates" target="_blank">Medium</a></p>
+                <p>
+                    Follow me on
+                    <a href="https://medium.com/@ugur.can.ates" target="_blank">Medium</a>
+                    or subscribe on
+                    <a href="https://substack.com/@ugurates" target="_blank">Substack</a>
+                    for new articles.
+                </p>
             </div>
         </div>
     </section>
@@ -557,7 +517,7 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xkokjknw" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -574,6 +534,8 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
+                        <!-- Honeypot anti-spam field (invisible to humans) -->
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
                         <button type="submit" class="btn-submit">
                             Send Message
                             <i class="fas fa-paper-plane"></i>
@@ -592,6 +554,7 @@
                 <a href="https://linkedin.com/in/ugurcanates" target="_blank">LinkedIn</a>
                 <a href="https://github.com/ugurrates" target="_blank">GitHub</a>
                 <a href="https://medium.com/@ugur.can.ates" target="_blank">Medium</a>
+                <a href="https://substack.com/@ugurates" target="_blank">Substack</a>
             </div>
         </div>
     </footer>

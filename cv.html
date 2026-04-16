@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ugur Ates - CV | Security Architect | Security Automation Engineer | SOC Team Lead">
     <title>CV - Ugur Ates | Security Architect | SOC Team Lead</title>
-    
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://ugurrates.github.io/Blog-Page/cv.html">
+    <meta property="og:title" content="Ugur Ates — CV | Security Architect | SOC Team Lead">
+    <meta property="og:description" content="Curriculum vitae of Ugur Ates: security architect, SOC team lead, critical infrastructure cybersecurity.">
+    <meta property="og:site_name" content="Ugur Ates">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://ugurrates.github.io/Blog-Page/cv.html">
+    <meta name="twitter:title" content="Ugur Ates — CV | Security Architect | SOC Team Lead">
+    <meta name="twitter:description" content="Curriculum vitae of Ugur Ates: security architect, SOC team lead, critical infrastructure cybersecurity.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNQBF4LBD0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KNQBF4LBD0');
+    </script>
+
+    <!-- Set theme before paint to avoid flash -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -24,6 +58,11 @@
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="cv.html" class="active">CV</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -354,6 +393,7 @@
                 <a href="https://linkedin.com/in/ugurcanates" target="_blank">LinkedIn</a>
                 <a href="https://github.com/ugurrates" target="_blank">GitHub</a>
                 <a href="https://medium.com/@ugur.can.ates" target="_blank">Medium</a>
+                <a href="https://substack.com/@ugurates" target="_blank">Substack</a>
             </div>
         </div>
     </footer>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ugurrates.github.io/Blog-Page/sitemap.xml
